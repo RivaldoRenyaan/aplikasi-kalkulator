@@ -69,16 +69,18 @@ class MainActivity : AppCompatActivity() {
             if (numbersText != "0")  {
 //                masukin firstNumber
                 firstNumber = numbersText.toInt()
+
 //                setting untuk secondDisplayView
                 numbersText += " ${operator}"
                 secondDisplayView.text = numbersText
 //                reset numbersText
                 numbersText = "0"
+
 //                tentukan operator
                 operators = operator
                 mainDisplayTextView.text = numbersText
             } else {
-                Toast.makeText(this, "Gaboleh Operator, harap masukan angka terlebih dahulu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "tidak boleh Operator, harap masukan angka terlebih dahulu", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -90,9 +92,9 @@ class MainActivity : AppCompatActivity() {
         //        equals
         fun setResultBtnFunc() {
 //            jika user belum memasukan angka sama sekali
-            if (firstNumber == 0) Toast.makeText(this, "Harap masukan terlebih dulu angka dan operasinya. Trims :)", Toast.LENGTH_SHORT).show()
+            if (firstNumber == 0) Toast.makeText(this, "Harap masukan terlebih dulu angka dan operasinya", Toast.LENGTH_SHORT).show()
 
-//                masukin value secondNumber
+//                masukan value secondNumber
             secondNumber = numbersText.toInt()
 //            update tampilan di secondDisplayText
             val secondDisplayViewText = "${firstNumber.toString()} ${operators} ${secondNumber.toString()}"
@@ -109,7 +111,7 @@ class MainActivity : AppCompatActivity() {
                     else -> 0
                 }
             } else {
-                Toast.makeText(this, "Harap masukan terlebih dulu operasinya. Trims :)", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Harap masukan terlebih dulu operasinya", Toast.LENGTH_SHORT).show()
 
                 numbersText.toInt()
             }
@@ -125,7 +127,7 @@ class MainActivity : AppCompatActivity() {
         val clearButton: Button = findViewById(R.id.clear)
         clearButton.setOnClickListener {
             if (numbersText == "0")  {
-                Toast.makeText(this, "Sudah NOL! Jangan di CLEAR lagi.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Sudah NOL! Jangan di hapus lagi.", Toast.LENGTH_SHORT).show()
             }
 
             numbersText = "0"

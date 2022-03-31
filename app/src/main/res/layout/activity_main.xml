@@ -16,7 +16,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/plus"
         android:textColor="#F00"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/minus"
         android:textColor="#F00"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tambah"
         tools:ignore="TextContrastCheck" />
@@ -74,7 +74,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/equals"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/nol"
@@ -122,7 +122,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/multiply"
         android:textColor="#F00"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kurang" />
 
@@ -166,7 +166,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="@string/divide"
         android:textColor="#F00"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kali"
         tools:ignore="TextContrastCheck" />
